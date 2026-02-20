@@ -2346,3 +2346,223 @@ body {
     min-height: 560px;
   }
 }
+
+/* ============================================================
+   TEAM PAGE — CLASS-BASED RESPONSIVE SYSTEM
+   Replaces inline styles on VP/Secretary/President cards.
+   Clean single-source breakpoints, no !important chains.
+   ============================================================ */
+
+/* ---- VP + Secretary 2-column wrapper ---- */
+.leaders-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+/* ---- Each mini leader card (image left, text right) ---- */
+.leader-card-side {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+.leader-card-side .team-leader-img {
+  height: 280px;
+}
+.leader-card-side .team-leader-body {
+  padding: 30px;
+}
+
+/* ---- President name: use fluid clamp so it never overflows ---- */
+.leader-name-president {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 6vw, 3rem);
+  color: var(--white);
+  letter-spacing: 2px;
+  margin: 8px 0;
+  line-height: 1;
+  word-break: break-word;
+}
+
+/* ---- VP/Secretary names ---- */
+.leader-name-secondary {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 4.5vw, 2rem);
+  color: var(--white);
+  letter-spacing: 2px;
+  margin: 4px 0;
+  line-height: 1;
+  word-break: break-word;
+}
+
+/* ---- Stats row ---- */
+.leader-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.leader-stat {
+  border-left: 2px solid var(--orange);
+  padding-left: 14px;
+  flex: 0 0 auto;
+}
+.leader-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--orange);
+  line-height: 1;
+}
+.leader-stat-label {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ============================================================
+   BREAKPOINTS
+   ============================================================ */
+
+/* Tablet: stack the 2-col row */
+@media (max-width: 768px) {
+  .leaders-2col {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  .leader-card-side {
+    grid-template-columns: 180px 1fr;
+  }
+  .leader-card-side .team-leader-img {
+    height: 220px;
+  }
+  .leader-card-side .team-leader-body {
+    padding: 24px 20px;
+  }
+}
+
+/* Mobile: full-stack all cards */
+@media (max-width: 540px) {
+  .leader-card-side {
+    grid-template-columns: 1fr;
+  }
+  .leader-card-side .team-leader-img {
+    height: 180px;
+    width: 100%;
+  }
+  .leader-card-side .team-leader-body {
+    padding: 20px 16px;
+  }
+
+  /* President card body */
+  .team-leader-body {
+    padding: 20px 16px;
+  }
+  .team-leader-img {
+    height: 200px;
+  }
+  /* Accent line: top instead of left on stacked layout */
+  .team-leader-body::before {
+    left: 0; right: 0; top: 0; bottom: auto;
+    width: auto; height: 3px;
+  }
+
+  .leader-stats {
+    gap: 12px;
+  }
+  .leader-stat-num {
+    font-size: 1.5rem;
+  }
+
+  /* Section padding tighter */
+  .team-leader-section {
+    margin-bottom: 30px;
+  }
+}
+
+/* Small mobile: 375–540px */
+@media (max-width: 400px) {
+  .container {
+    padding: 0 14px;
+  }
+  .section-pad {
+    padding: 44px 0;
+  }
+  .team-leader-body {
+    padding: 18px 14px;
+  }
+  .team-leader-img {
+    height: 170px;
+  }
+  .leader-card-side .team-leader-img {
+    height: 150px;
+  }
+  .leader-card-side .team-leader-body {
+    padding: 16px 14px;
+  }
+  .leader-stats {
+    gap: 10px;
+  }
+  /* 2 stats per row */
+  .leader-stat {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 70px;
+  }
+  .leader-stat-num {
+    font-size: 1.3rem;
+  }
+  .leader-stat-label {
+    font-size: 0.58rem;
+    letter-spacing: 2px;
+  }
+  .label-tag {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+  /* Team grid single column */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .leaders-2col {
+    gap: 12px;
+  }
+  .divider-orange {
+    width: 36px;
+  }
+}
+
+/* Ultra-narrow: 325px */
+@media (max-width: 340px) {
+  .container {
+    padding: 0 10px;
+  }
+  .team-leader-body {
+    padding: 14px 10px;
+  }
+  .team-leader-img {
+    height: 150px;
+  }
+  .leader-card-side .team-leader-img {
+    height: 130px;
+  }
+  .leader-card-side .team-leader-body {
+    padding: 14px 10px;
+  }
+  /* Stats: each full width */
+  .leader-stat {
+    flex: 1 1 100%;
+  }
+  .leader-stat-num {
+    font-size: 1.2rem;
+  }
+  .leaders-2col {
+    gap: 10px;
+  }
+  .section-pad {
+    padding: 36px 0;
+  }
+}
