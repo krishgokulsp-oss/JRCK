@@ -79,23 +79,25 @@
         </div>
         <div class="team-leader-body">
           <span class="label-tag">President · Ride Head</span>
-          <h2 style="font-family:var(--font-display);font-size:3rem;color:var(--white);letter-spacing:2px;margin:8px 0;">Krishnachandran Menon</h2>
+          <!-- FIXED: clamp() font-size instead of fixed 3rem — never overflows on any screen -->
+          <h2 class="leader-name-president">Krishnachandran Menon</h2>
           <div class="divider-orange"></div>
           <p style="font-size:0.95rem;color:var(--gray);line-height:1.8;margin-top:16px;margin-bottom:24px;">
-            The President of JRCK. Krishnachandran is the driving force behind JRCK, leading the club’s rides and overall development with passion and dedication. As President, he personally oversees and leads major rides, ensuring every event reflects the true spirit of brotherhood and unity among Jawa riders in Kerala. With over 80,000 km clocked on his Jawa 42, he plays a key role in strengthening the club’s culture, expanding its vision, and continuously improving JRCK for its members.
+            The President of JRCK. Krishnachandran is the driving force behind JRCK, leading the club's rides and overall development with passion and dedication. As President, he personally oversees and leads major rides, ensuring every event reflects the true spirit of brotherhood and unity among Jawa riders in Kerala. With over 80,000 km clocked on his Yezdi Adventure, he plays a key role in strengthening the club's culture, expanding its vision, and continuously improving JRCK for its members.
           </p>
-          <div style="display:flex;gap:24px;margin-bottom:24px;">
-            <div style="border-left:2px solid var(--orange);padding-left:14px;">
-              <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--orange);">80K+</div>
-              <div style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;color:var(--gray);text-transform:uppercase;">KM Ridden</div>
+          <!-- FIXED: leader-stats class replaces inline flex — wraps cleanly on small screens -->
+          <div class="leader-stats">
+            <div class="leader-stat">
+              <div class="leader-stat-num">80K+</div>
+              <div class="leader-stat-label">KM Ridden</div>
             </div>
-            <div style="border-left:2px solid var(--orange);padding-left:14px;">
-              <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--orange);">100+</div>
-              <div style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;color:var(--gray);text-transform:uppercase;">Rides Led</div>
+            <div class="leader-stat">
+              <div class="leader-stat-num">100+</div>
+              <div class="leader-stat-label">Rides Led</div>
             </div>
-            <div style="border-left:2px solid var(--orange);padding-left:14px;">
-              <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--orange);">2019</div>
-              <div style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;color:var(--gray);text-transform:uppercase;">Founded JRCK</div>
+            <div class="leader-stat">
+              <div class="leader-stat-num">2019</div>
+              <div class="leader-stat-label">Founded JRCK</div>
             </div>
           </div>
           <p style="font-family:var(--font-heading);font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);">🏍️ Yezdi Adventure · Palakkad</p>
@@ -103,39 +105,46 @@
       </div>
     </div>
 
-    <!-- Vice President + Captain row -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:50px;">
-      <div class="team-leader-card anim-left" style="display:grid;grid-template-columns:220px 1fr;">
-        <div class="team-leader-img" style="height:280px;">
+    <!-- Secretary + Vice President row -->
+    <!-- FIXED: leaders-2col class replaces inline grid — stacks to 1 col on mobile -->
+    <div class="leaders-2col">
+
+      <!-- Secretary -->
+      <!-- FIXED: leader-card-side class replaces inline 220px grid — stacks on mobile -->
+      <div class="team-leader-card leader-card-side anim-left">
+        <div class="team-leader-img">
           <div style="width:100%;height:100%;background:linear-gradient(135deg,#0d1a00,#1a2d00);display:flex;align-items:center;justify-content:center;">
             <div style="font-family:var(--font-display);font-size:5rem;color:var(--orange);opacity:0.3;">G</div>
           </div>
         </div>
-        <div class="team-leader-body" style="padding:30px 30px;">
+        <div class="team-leader-body">
           <span class="label-tag" style="font-size:0.6rem;">Secretary</span>
-          <h3 style="font-family:var(--font-display);font-size:2rem;color:var(--white);letter-spacing:2px;margin:4px 0;">Gokul Krishnan</h3>
+          <!-- FIXED: clamp font-size via class -->
+          <h3 class="leader-name-secondary">Gokul Krishnan</h3>
           <div class="divider-orange"></div>
-          <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;margin-top:12px;">The Strategic Mind of JRCK.
-Gokul manages club operations, membership growth, and inter-district coordination, ensuring the smooth functioning and steady expansion of JRCK. A proud Jawa 42 owner, he is passionate about touring and long highway rides, strongly advocating riding discipline and safety. His focus on structured rides, responsible riding culture, and safety awareness plays a vital role in shaping JRCK’s professional and united identity across Kerala.</p>
-          <p style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-top:12px;">🏍️ Jawa 42 · Malapuram</p>
+          <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;margin-top:12px;">The Strategic Mind of JRCK. Gokul manages club operations, membership growth, and inter-district coordination, ensuring the smooth functioning and steady expansion of JRCK. A proud Jawa 42 owner, he is passionate about touring and long highway rides, strongly advocating riding discipline and safety. His focus on structured rides, responsible riding culture, and safety awareness plays a vital role in shaping JRCK's professional and united identity across Kerala.</p>
+          <p style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-top:12px;">🏍️ Jawa 42 · Malappuram</p>
         </div>
       </div>
 
-      <div class="team-leader-card anim-right" style="display:grid;grid-template-columns:220px 1fr;">
-        <div class="team-leader-img" style="height:280px;">
+      <!-- Vice President -->
+      <div class="team-leader-card leader-card-side anim-right">
+        <div class="team-leader-img">
           <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a0000,#2d0d00);display:flex;align-items:center;justify-content:center;">
             <div style="font-family:var(--font-display);font-size:5rem;color:var(--orange);opacity:0.3;">S</div>
           </div>
         </div>
-        <div class="team-leader-body" style="padding:30px 30px;">
+        <div class="team-leader-body">
           <span class="label-tag" style="font-size:0.6rem;">Vice President</span>
-          <h3 style="font-family:var(--font-display);font-size:2rem;color:var(--white);letter-spacing:2px;margin:4px 0;">Shihab Manayil</h3>
+          <h3 class="leader-name-secondary">Shihab Manayil</h3>
           <div class="divider-orange"></div>
-          <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;margin-top:12px;">Serving as the Vice President, Shihab Manayil is an All India Jawa 42 rider who represents leadership, unity, and long-distance riding passion. He plays a key role in guiding the club’s vision and strengthening the riding community across regions.</p>
-          <p style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-top:12px;">🏍️ Jawa 42 · Malapuram</p>
+          <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;margin-top:12px;">Serving as the Vice President, Shihab Manayil is an All India Jawa 42 rider who represents leadership, unity, and long-distance riding passion. He plays a key role in guiding the club's vision and strengthening the riding community across regions.</p>
+          <p style="font-family:var(--font-heading);font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-top:12px;">🏍️ Jawa 42 · Malappuram</p>
         </div>
       </div>
-    </div>
+
+    </div><!-- /.leaders-2col -->
+
   </div>
 </section>
 
