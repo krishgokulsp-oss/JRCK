@@ -8,6 +8,8 @@
 <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -50,7 +52,7 @@
 
 <!-- PAGE HERO -->
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=1920&q=80');"></div>
+  <div class="page-hero-bg" style="background-image: url('assets/images/jrck_banner_2.png');"></div>
   <div class="page-hero-overlay"></div>
   <div class="container page-hero-content">
     <p class="page-breadcrumb"><a href="index.html">Home</a><span>›</span> About</p>
@@ -59,10 +61,14 @@
 </section>
 
 <!-- INTRODUCTION -->
-<section class="section-pad" style="background: var(--black); position:relative; overflow:hidden;">
-  <svg class="watermark-logo" style="position:absolute;right:40px;top:50%;transform:translateY(-50%);width:250px;opacity:0.03;pointer-events:none;" viewBox="0 0 80 90">
-    <path d="M8 10 Q8 4 14 4 L66 4 Q72 4 72 10 L72 60 L40 86 L8 60 Z" fill="#F67E2A"/>
-  </svg>
+<section class="section-pad about-story-section" style="background: var(--black); position:relative; overflow:hidden;">
+  <!-- Real JRCK logo as background watermark — replaces old SVG -->
+  <img
+    src="assets/images/logo.png"
+    alt=""
+    aria-hidden="true"
+    class="story-logo-watermark"
+  >
   <div class="container">
     <div style="max-width:800px;">
       <span class="label-tag anim-fade">Our Story</span>
@@ -81,6 +87,7 @@
   </div>
 </section>
 
+
 <!-- MISSION & VISION -->
 <section class="section-pad-sm" style="background: var(--dark);">
   <div class="container">
@@ -93,7 +100,7 @@
         <div class="divider-orange"></div>
         <p class="mv-text">To unite every Jawa and Yezdi rider across Kerala under one brotherhood — fostering safe riding practices, organizing premium touring and off-road experiences, building deep community bonds, and representing the legendary heritage of Jawa and Yezdi motorcycles with pride and passion.</p>
         <ul style="margin-top:20px; list-style:none;">
-          <li style="font-size:0.875rem;color:var(--gray);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--orange);">Organize monthly rides across Kerala's most scenic routes</li>
+          <li style="font-size:0.875rem;color:var(--gray);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--orange);">Organize quarterly rides across Kerala’s scenic routes</li>
           <li style="font-size:0.875rem;color:var(--gray);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--orange);">Promote safe and responsible motorcycle culture</li>
           <li style="font-size:0.875rem;color:var(--gray);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--orange);">Connect Jawa & Yezdi owners statewide</li>
           <li style="font-size:0.875rem;color:var(--gray);padding-left:16px;border-left:2px solid var(--orange);">Give back to society through community service rides</li>
@@ -128,27 +135,27 @@
           <div class="timeline-item">
             <div class="timeline-year">2019</div>
             <div class="timeline-title">The Birth of JRCK</div>
-            <p class="timeline-text">A group of 12 passionate Jawa riders in Kozhikode formed the Jawa Riders Club Kerala. The first official ride — a sunrise trip to Calicut beach — set the tone for everything that followed.</p>
+            <p class="timeline-text">A group of two passionate Jawa riders — Shahid from Kozhikode and Febin from Kannur — founded Jawa Riders Club Kerala. The first official meetup was held at Thrissur Round, in front of Vadakkunnathan Temple.</p>
           </div>
           <div class="timeline-item">
             <div class="timeline-year">2020</div>
             <div class="timeline-title">Growing Through the Storm</div>
-            <p class="timeline-text">Despite the pandemic, JRCK grew digitally — hosting online technical sessions, ride planning workshops, and growing the community to over 100 members across 5 districts.</p>
+            <p class="timeline-text">Despite the pandemic, JRCK grew digitally — hosting online technical sessions, ride planning workshops, and growing the community to over 50 members across 5 districts.</p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-year">2021</div>
+            <div class="timeline-year">2022</div>
             <div class="timeline-title">First Yezdi Members Welcomed</div>
             <p class="timeline-text">With the re-launch of Yezdi motorcycles, JRCK opened its doors to Yezdi riders, cementing the brotherhood's identity as the home for all classic-heritage motorcycle enthusiasts.</p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-year">2022</div>
-            <div class="timeline-title">500+ Members Milestone</div>
-            <p class="timeline-text">JRCK crossed 500 active members with chapters in all 14 districts. The first charity ride for flood relief established JRCK as a community-first organization.</p>
+            <div class="timeline-year">2023</div>
+            <div class="timeline-title">100+ Members Milestone</div>
+            <p class="timeline-text">JRCK crossed 100 active members with chapters in all 14 districts. The first charity ride for flood relief established JRCK as a community-first organization.</p>
           </div>
           <div class="timeline-item">
             <div class="timeline-year">2023–25</div>
             <div class="timeline-title">Statewide Brotherhood</div>
-            <p class="timeline-text">120+ organized rides, 3 major off-road championships, and Kerala's most iconic motorcycle brotherhood — JRCK's legend continues to grow with every ride.</p>
+            <p class="timeline-text">50+ organized rides, 4 major off-road championships, and Kerala's most iconic motorcycle brotherhood — JRCK's legend continues to grow with every ride.</p>
           </div>
         </div>
       </div>
@@ -156,6 +163,8 @@
         <div style="position:sticky;top:100px;">
           <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&q=80" alt="JRCK Ride" loading="lazy" style="width:100%;height:400px;object-fit:cover;filter:brightness(0.8) contrast(1.1);" class="anim-right">
           <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=800&q=80" alt="Brotherhood" loading="lazy" style="width:100%;height:250px;object-fit:cover;filter:brightness(0.8);margin-top:6px;" class="anim-right anim-delay-1">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=800&q=80" alt="Brotherhood" loading="lazy" style="width:100%;height:250px;object-fit:cover;filter:brightness(0.8);margin-top:6px;" class="anim-right anim-delay-1">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=800&q=80" alt="Brotherhood" loading="lazy" style="width:100%;height:250px;object-fit:cover;filter:brightness(0.8);margin-top:6px;" class="anim-right anim-delay-1">
         </div>
       </div>
     </div>
@@ -205,7 +214,7 @@
 
 <!-- GROUP RIDE IMAGE BANNER -->
 <div class="parallax-banner">
-  <div class="parallax-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1920&q=70');"></div>
+  <div class="parallax-banner-bg" style="background-image: url('assets/images/jrck_banner_3.png');"></div>
   <div class="parallax-banner-overlay"></div>
   <div class="parallax-banner-content">
     <p class="parallax-quote">"One Ride.<br><span>One Brotherhood."</span></p>
@@ -217,7 +226,7 @@
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
       <div class="anim-left">
-        <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=800&q=80" alt="Why Join JRCK" loading="lazy" style="width:100%;height:450px;object-fit:cover;filter:brightness(0.8);">
+        <img src="assets/images/jrck_banner_2.png" alt="Why Join JRCK" loading="lazy" style="width:100%;height:450px;object-fit:cover;filter:brightness(0.8);">
       </div>
       <div class="anim-right">
         <span class="label-tag">Why Join?</span>
@@ -229,7 +238,7 @@
             <span style="color:var(--orange);font-size:1.3rem;flex-shrink:0;">✦</span>
             <div>
               <h4 style="font-family:var(--font-heading);font-size:0.9rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:4px;">Exclusive Access to Premium Rides</h4>
-              <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;">Members-only touring events, off-road sessions, and night rides organized across Kerala throughout the year.</p>
+              <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;">Exclusive access to premium rides and touring events organized across Kerala throughout the year. Club members receive priority invitations for all upcoming rides along with dedicated service support to ensure a smooth and confident riding experience every time.</p>
             </div>
           </div>
           <div style="display:flex;gap:16px;align-items:flex-start;">
@@ -250,7 +259,7 @@
             <span style="color:var(--orange);font-size:1.3rem;flex-shrink:0;">✦</span>
             <div>
               <h4 style="font-family:var(--font-heading);font-size:0.9rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--white);margin-bottom:4px;">A Family That Has Your Back</h4>
-              <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;">500+ brothers and sisters across Kerala who will stop on any road at any time for a fellow JRCK member.</p>
+              <p style="font-size:0.85rem;color:var(--gray);line-height:1.7;">100+ brothers and sisters across Kerala who will stop on any road at any time for a fellow JRCK member.</p>
             </div>
           </div>
         </div>
@@ -260,7 +269,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ============================================================ FOOTER ============================================================ -->
 <footer>
   <div class="footer-top">
     <div class="container">
@@ -268,16 +277,32 @@
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
             <img src="assets/images/logo.png" alt="JRCK Logo" class="logo-svg" style="object-fit:contain;">
-            <div><span class="nav-logo-text">JRCK</span><span class="nav-logo-sub">Est. 2019</span></div>
+            <div>
+              <span class="nav-logo-text">JRCK</span>
+              <span class="nav-logo-sub">Est. 2019</span>
+            </div>
           </a>
-          <p class="footer-desc">Jawa Riders Club Kerala — A premium bike touring and off-road brotherhood community of Jawa and Yezdi owners in God's Own Country.</p>
-          <div class="footer-social">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn">📸</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn">👥</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn">▶</a>
-            <a href="https://wa.me" target="_blank" rel="noopener" class="social-btn">💬</a>
-          </div>
+          <p class="footer-desc">Jawa Riders Club Kerala — A premium bike touring and off-road brotherhood community of Jawa and Yezdi owners across God's Own Country.</p>
+			<div class="footer-social">
+			  <a href="https://www.instagram.com/j_r_c_k_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+				<i class="fab fa-instagram"></i>
+			  </a>
+			  
+			  <a href="https://wa.me/919656139659" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+				<i class="fab fa-whatsapp"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+				<i class="fab fa-youtube"></i>
+			  </a>
+
+			</div>
         </div>
+
         <div>
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
@@ -289,21 +314,33 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
+
         <div>
-          <h4 class="footer-heading">Explore</h4>
+          <h4 class="footer-heading">Ride Categories</h4>
           <ul class="footer-links">
             <li><a href="events.html">Touring Rides</a></li>
             <li><a href="events.html">Off-Road Adventures</a></li>
             <li><a href="events.html">Night Rides</a></li>
+            <li><a href="events.html">Charity Rides</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html#membership">Join JRCK</a></li>
           </ul>
         </div>
+
         <div>
           <h4 class="footer-heading">Contact</h4>
-          <div class="footer-contact-item"><span class="icon">📍</span><span>Kerala, India</span></div>
-          <div class="footer-contact-item"><span class="icon">✉️</span><span>jawaridersclubkerala@gmail.com</span></div>
-          <div class="footer-contact-item"><span class="icon">📱</span><span>+91 9656139659</span></div>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Kerala, India<br>Operating across all 14 districts</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>jawaridersclubkerala@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📱</span>
+            <span>+91 9656139659<br>WhatsApp preferred</span>
+          </div>
         </div>
       </div>
     </div>
@@ -311,8 +348,8 @@
   <div class="footer-bottom">
     <div class="container">
       <div class="footer-bottom-inner">
-        <p class="footer-copy">© 2026 <span>JRCK – Jawa Riders Club Kerala</span>. All Rights Reserved.</p>
-        <p class="footer-tagline">Where Legends Ride.</p>
+        <p class="footer-copy">© 2026 <span>JRCK – Jawa Riders Club Kerala</span>. All Rights Reserved. Est. 2019.</p>
+        <p class="footer-tagline">One Ride. One Brotherhood.</p>
       </div>
     </div>
   </div>
