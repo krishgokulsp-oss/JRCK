@@ -1,451 +1,429 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Events & Rides – JRCK Kerala</title>
-	<meta name="description" content="Upcoming and past rides by JRCK – touring, off-road, night rides, and charity rides across Kerala. Join the next adventure.">
-	<link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events & Rides – JRCK Kerala</title>
+<meta name="description" content="Upcoming and past rides by JRCK – touring, off-road, night rides, and charity rides across Kerala. Join the next adventure.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
-	<!-- HEADER -->
-	<header id="header">
-	  <a href="index.html" class="nav-logo">
-		<img src="assets/images/logo.png" alt="JRCK Logo" class="logo-svg" style="object-fit:contain;">
-		<div><span class="nav-logo-text">JRCK</span><span class="nav-logo-sub">Est. 2019</span></div>
-	  </a>
-	  <nav>
-		<ul class="nav-links">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="dropdown">
-			<a href="about.html">About <span class="dropdown-arrow">▾</span></a>
-			<ul class="dropdown-menu">
-			  <li><a href="about.html">About JRCK</a></li>
-			  <li><a href="events.html">Events & Rides</a></li>
-			  <li><a href="team.html">Our Team</a></li>
-			  <li><a href="faq.html">FAQ</a></li>
-			</ul>
-		  </li>
-		  <li><a href="events.html" class="active">Events</a></li>
-		  <li><a href="blog.html">Blog</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-		  <li><a href="contact.html#membership" class="nav-cta">Join Now</a></li>
-		</ul>
-	  </nav>
-	  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-	</header>
-	<nav class="nav-mobile">
-	  <a href="index.html">Home</a>
-	  <a href="about.html">About JRCK</a>
-	  <a href="events.html" class="mobile-sub">↳ Events & Rides</a>
-	  <a href="team.html" class="mobile-sub">↳ Our Team</a>
-	  <a href="faq.html" class="mobile-sub">↳ FAQ</a>
-	  <a href="blog.html">Blog</a>
-	  <a href="contact.html">Contact</a>
-	  <a href="contact.html#membership" style="color:var(--orange);font-weight:800;">⚡ Join the Brotherhood</a>
-	</nav>
+<!-- HEADER -->
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo.png" alt="JRCK Logo" class="logo-svg" style="object-fit:contain;">
+    <div><span class="nav-logo-text">JRCK</span><span class="nav-logo-sub">Est. 2019</span></div>
+  </a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About <span class="dropdown-arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="about.html">About JRCK</a></li>
+          <li><a href="events.html">Events & Rides</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#membership" class="nav-cta">Join Now</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+<nav class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About JRCK</a>
+  <a href="events.html" class="mobile-sub">↳ Events & Rides</a>
+  <a href="team.html" class="mobile-sub">↳ Our Team</a>
+  <a href="faq.html" class="mobile-sub">↳ FAQ</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#membership" style="color:var(--orange);font-weight:800;">⚡ Join the Brotherhood</a>
+</nav>
 
-	<!-- PAGE HERO -->
-	<section class="page-hero">
-	  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1920&q=80');"></div>
-	  <div class="page-hero-overlay"></div>
-	  <div class="container page-hero-content">
-		<p class="page-breadcrumb"><a href="index.html">Home</a><span>›</span> Events & Rides</p>
-		<h1 class="page-title">Rides &amp; <span>Events</span></h1>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('assets/images/varkala.jpg');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <p class="page-breadcrumb"><a href="index.html">Home</a><span>›</span> Events & Rides</p>
+    <h1 class="page-title">Rides &amp; <span>Events</span></h1>
+  </div>
+</section>
+
+
+	<!-- OUR RIDES GALLERY -->
+<section class="section-pad" style="background:var(--black);">
+  <div class="container">
+	<div class="events-header">
+	  <div>
+		<span class="label-tag anim-fade">Memory Lane</span>
+		<h2 class="section-title anim-fade anim-delay-1">Map of <span>Memories</span></h2>
 	  </div>
-	</section>
+	</div>
+	<!-- Filter Buttons -->
+	<div class="event-categories anim-fade">
+	  <button class="cat-btn active" data-filter="all">All Rides</button>
+	  <button class="cat-btn" data-filter="touring">Touring</button>
+	  <button class="cat-btn" data-filter="offroad">Off-Road</button>
+	  <button class="cat-btn" data-filter="night">Night Rides</button>
+	  <button class="cat-btn" data-filter="charity">Charity</button>
+	</div>
+	<div class="events-full-grid">
 
-	<!-- UPCOMING RIDES -->
-	<section class="section-pad" style="background:var(--black);">
-	  <div class="container">
-		<div class="events-header">
-		  <div>
-			<span class="label-tag anim-fade">Upcoming</span>
-			<h2 class="section-title anim-fade anim-delay-1">Next <span>Adventures</span></h2>
-		  </div>
+<div class="event-card filterable-card anim-fade" data-category="touring">
+  <div class="event-img">
+    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Nilgiris Ride" loading="lazy">
+    <span class="event-date-badge">May 8, 2026</span>
+    <span class="event-category" style="background-color:#1db954; color:#fff;">
+      Coming Soon
+    </span>
+  </div>
+
+  <div class="event-body">
+    <h3 class="event-title">Hidden Ghat Run – Nilgiris</h3>
+    <div class="event-meta">
+      <span>Kochi Start</span>
+      <span>3 Days · 420 km (Expected)</span>
+    </div>
+    <p class="event-desc">
+      Ride deep into the hidden ghats of the Nilgiris on a 3-day mountain expedition filled with thrilling hairpins, cool forest stretches, rolling mist, and breathtaking high-altitude viewpoints.
+    </p>
+    <a href="contact.html" class="event-register">Notify Me</a>
+  </div>
+</div>
+	  
+	  <div class="event-card filterable-card anim-fade" data-category="touring">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Wayanad" loading="lazy">
+		  <span class="event-date-badge">Feb 14, 2026</span>
+		  <span class="event-category">Touring</span>
 		</div>
-		<!-- Filter Buttons -->
-		<div class="event-categories anim-fade">
-		  <button class="cat-btn active" data-filter="all">All Rides</button>
-		  <button class="cat-btn" data-filter="touring">Touring</button>
-		  <button class="cat-btn" data-filter="offroad">Off-Road</button>
-		  <button class="cat-btn" data-filter="night">Night Rides</button>
-		  <button class="cat-btn" data-filter="charity">Charity</button>
-		</div>
-		<div class="events-full-grid">
-
-		  <div class="event-card filterable-card anim-fade" data-category="touring">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Wayanad" loading="lazy">
-			  <span class="event-date-badge">Mar 15, 2025</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Wayanad Mountain Run</h3>
-			  <div class="event-meta"><span>Kozhikode Start</span><span>2 Days · 420 km</span></div>
-			  <p class="event-desc">A two-day tour through the lush mountains of Wayanad. Experience misty mornings, waterfalls, and the warmth of JRCK brotherhood on every kilometre.</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Munnar Offroad" loading="lazy">
-			  <span class="event-date-badge">Apr 6, 2025</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Munnar Dirt Chronicles</h3>
-			  <div class="event-meta"><span>Ernakulam Start</span><span>1 Day · 180 km</span></div>
-			  <p class="event-desc">Get dirty in Munnar. Off-road trails through tea gardens, river crossings, and forest tracks. Yezdi Adventure and Jawa Perak riders preferred.</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="night">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
-			  <span class="event-date-badge">Apr 26, 2025</span>
-			  <span class="event-category">Night Ride</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Phantom Midnight Run</h3>
-			  <div class="event-meta"><span>Thrissur Start</span><span>8 Hours · 300 km</span></div>
-			  <p class="event-desc">After midnight, the highways belong to JRCK. An epic night ride through Kerala's emptied roads under a canopy of stars. Unforgettable every time.</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade" data-category="charity">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&q=80" alt="Charity Ride" loading="lazy">
-			  <span class="event-date-badge">May 12, 2025</span>
-			  <span class="event-category">Charity</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Ride for Kerala · Blood Drive</h3>
-			  <div class="event-meta"><span>Kochi Start</span><span>1 Day · 200 km</span></div>
-			  <p class="event-desc">Riding with a purpose. JRCK's annual blood donation drive combined with a scenic ride across Ernakulam. Over 200 units donated in previous editions.</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="touring">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Ooty Tour" loading="lazy">
-			  <span class="event-date-badge">Jun 8, 2025</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Kerala to Ooty Grand Tour</h3>
-			  <div class="event-meta"><span>Palakkad Start</span><span>3 Days · 650 km</span></div>
-			  <p class="event-desc">The ultimate cross-border tour. From the Palakkad plains to the Nilgiri mountains — an epic 3-day journey through South India's most spectacular roads.</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Jul 20, 2025</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Agasthya Hills Conquest</h3>
-			  <div class="event-meta"><span>Trivandrum Start</span><span>1 Day · 120 km</span></div>
-			  <p class="event-desc">South Kerala's most challenging off-road terrain. Rocky trails, deep forest, and a summit that few have conquered on two wheels. Are you ready?</p>
-			  <a href="contact.html" class="event-register">Register Now</a>
-			</div>
-		  </div>
-
+		<div class="event-body">
+		  <h3 class="event-title">Panchalimedu 2026</h3>
+		  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 420 km</span></div>
+		  <p class="event-desc">Ride to the breathtaking hills of Panchalimedu, where winding ghat roads meet panoramic valley views. Cool mountain air, scenic forest stretches, and peaceful hilltop moments make this two-day touring experience truly unforgettable.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
 		</div>
 	  </div>
-	</section>
 
-	<!-- RIDE CATEGORIES -->
-	<section class="ride-category-section section-pad">
-	  <div class="container">
-		<span class="label-tag anim-fade">Explore by Type</span>
-		<h2 class="section-title anim-fade anim-delay-1">Ride <span>Categories</span></h2>
-		<div class="ride-cat-grid">
-		  <div class="ride-cat-item anim-fade">
-			<img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Touring" loading="lazy">
-			<div class="ride-cat-overlay">
-			  <h3 class="ride-cat-name">Touring</h3>
-			  <p class="ride-cat-count">40+ Rides Completed</p>
-			</div>
-		  </div>
-		  <div class="ride-cat-item anim-fade anim-delay-1">
-			<img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Off-Road" loading="lazy">
-			<div class="ride-cat-overlay">
-			  <h3 class="ride-cat-name">Off-Road</h3>
-			  <p class="ride-cat-count">35+ Rides Completed</p>
-			</div>
-		  </div>
-		  <div class="ride-cat-item anim-fade anim-delay-2">
-			<img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Rides" loading="lazy">
-			<div class="ride-cat-overlay">
-			  <h3 class="ride-cat-name">Night Rides</h3>
-			  <p class="ride-cat-count">25+ Rides Completed</p>
-			</div>
-		  </div>
-		  <div class="ride-cat-item anim-fade anim-delay-3">
-			<img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&q=80" alt="Charity" loading="lazy">
-			<div class="ride-cat-overlay">
-			  <h3 class="ride-cat-name">Charity Rides</h3>
-			  <p class="ride-cat-count">20+ Events Done</p>
-			</div>
-		  </div>
+	  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Munnar Offroad" loading="lazy">
+		  <span class="event-date-badge">Apr 6, 2025</span>
+		  <span class="event-category">Touring</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Chikkamagaluru 2025</h3>
+		  <div class="event-meta"><span>Palakkad Start</span><span>4 Day · 780 km</span></div>
+		  <p class="event-desc">Conquer the rugged landscapes of Chikmagalur with thrilling off-road sections through coffee estates, forest tracks, and river crossings. A perfect blend of adventure, elevation, and Western Ghats beauty.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
 		</div>
 	  </div>
-	</section>
 
-	<!-- PAST RIDES GALLERY -->
-	<section class="section-pad" style="background:var(--black);">
-	  <div class="container">
-		<div class="events-header">
-		  <div>
-			<span class="label-tag anim-fade">Memory Lane</span>
-			<h2 class="section-title anim-fade anim-delay-1">Map of <span>Memories</span></h2>
-		  </div>
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="night">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
+		  <span class="event-date-badge">May 26, 2025</span>
+		  <span class="event-category">Night Ride</span>
 		</div>
-		<!-- Filter Buttons -->
-		<div class="event-categories anim-fade">
-		  <button class="cat-btn active" data-filter="all">All Rides</button>
-		  <button class="cat-btn" data-filter="touring">Touring</button>
-		  <button class="cat-btn" data-filter="offroad">Off-Road</button>
-		  <button class="cat-btn" data-filter="night">Night Rides</button>
-		  <button class="cat-btn" data-filter="charity">Charity</button>
-		</div>
-		<div class="events-full-grid">
-
-		  <div class="event-card filterable-card anim-fade" data-category="touring">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Wayanad" loading="lazy">
-			  <span class="event-date-badge">Mar 15, 2026</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Panchalimedu 2026</h3>
-			  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 420 km</span></div>
-			  <p class="event-desc">Ride to the breathtaking hills of Panchalimedu, where winding ghat roads meet panoramic valley views. Cool mountain air, scenic forest stretches, and peaceful hilltop moments make this two-day touring experience truly unforgettable.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Munnar Offroad" loading="lazy">
-			  <span class="event-date-badge">Apr 6, 2025</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Chikkamagaluru 2025</h3>
-			  <div class="event-meta"><span>Palakkad Start</span><span>4 Day · 780 km</span></div>
-			  <p class="event-desc">Conquer the rugged landscapes of Chikmagalur with thrilling off-road sections through coffee estates, forest tracks, and river crossings. A perfect blend of adventure, elevation, and Western Ghats beauty.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="night">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
-			  <span class="event-date-badge">May 26, 2025</span>
-			  <span class="event-category">Night Ride</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Anakulam 2025</h3>
-			  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 300 km</span></div>
-			  <p class="event-desc">Ride into the wild heart of Anakulam, known for its serene forest roads and elephant corridors. A balanced mix of smooth highways and nature-bound stretches under Kerala’s open skies.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-		  
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="night">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
-			  <span class="event-date-badge">Feb 26, 2025</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Kanthalloor 2025</h3>
-			  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 300 km</span></div>
-			  <p class="event-desc">Ride into the breathtaking heights of Kanthalloor, Munnar — where winding mountain roads, mist-covered valleys, and endless plantations define the journey. A perfect blend of smooth highway cruising and scenic hill climbs under Kerala’s cool highland skies.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>		  
-
-		  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="touring">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Ooty Tour" loading="lazy">
-			  <span class="event-date-badge">Jun 8, 2024</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Kodai Mist 2024</h3>
-			  <div class="event-meta"><span>Palakkad Start</span><span>2 Days · 650 km</span></div>
-			  <p class="event-desc">An epic cross-border tour to Kodaikanal featuring sweeping mountain curves, misty pine forests, and breathtaking valley viewpoints. A premium long-distance ride built for true touring enthusiasts.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade" data-category="charity">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&q=80" alt="Charity Ride" loading="lazy">
-			  <span class="event-date-badge">May 12, 2024</span>
-			  <span class="event-category">Charity</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Attapadi · Independence day Ride</h3>
-			  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 320 km</span></div>
-			  <p class="event-desc">A purposeful ride to Attapadi’s tribal heartland combining scenic countryside roads with JRCK’s spirit of service. Brotherhood, responsibility, and riding passion come together on this meaningful journey.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-		  
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Aug 20, 2024</span>
-			  <span class="event-category">Touring</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Muthanga Ride 2024</h3>
-			  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
-			  <p class="event-desc">A challenging off-road expedition to Sirvali featuring rocky terrain, steep climbs, and deep forest sections. Designed for riders who seek raw trails and adrenaline-filled exploration.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Jun 20, 2024</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Siruvani Ride 2024</h3>
-			  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
-			  <p class="event-desc">A challenging off-road expedition to Sirvali featuring rocky terrain, steep climbs, and deep forest sections. Designed for riders who seek raw trails and adrenaline-filled exploration.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-		  
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Jan 1, 2024</span>
-			  <span class="event-category">Charity</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Muthanga New Year Ride 2024</h3>
-			  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
-			  <p class="event-desc">Kickstart the year with a powerful throttle twist and fresh horizons ahead. A celebratory ride filled with scenic highways, hilltop sunrises, and unstoppable brotherhood — welcoming the New Year the only way we know: engines roaring, spirits high, and miles to conquer together.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>		  
-		  
-		<div class="event-card filterable-card anim-fade anim-delay-2" data-category="touring">
-		  <div class="event-img">
-			<img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Varkala Cliff" loading="lazy">
-			<span class="event-date-badge">Sep 18, 2023</span>
-			<span class="event-category">Touring</span>
-		  </div>
-		  <div class="event-body">
-			<h3 class="event-title">Varkala Ride 2023</h3>
-			<div class="event-meta"><span>Palakkad Start</span><span>2 Day · 420 km</span></div>
-			<p class="event-desc">A scenic coastal tour to Varkala featuring smooth highways, sea-breeze stretches, and stunning cliffside views. A perfect blend of relaxed cruising, sunset moments, and JRCK brotherhood by the Arabian Sea.</p>
-			<a href="contact.html" class="event-register">Memory Saved</a>
-		  </div>
-		</div>
-		
-		<div class="event-card filterable-card anim-fade anim-delay-2" data-category="touring">
-		  <div class="event-img">
-			<img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Varkala Cliff" loading="lazy">
-			<span class="event-date-badge">Feb 18, 2022</span>
-			<span class="event-category">Off-Road</span>
-		  </div>
-		  <div class="event-body">
-			<h3 class="event-title">Masinagudi Ride 2022</h3>
-			<div class="event-meta"><span>Palakkad Start</span><span>2 Day · 480 km</span></div>
-			<p class="event-desc">A scenic forest tour to Masanagudi featuring winding ghat roads, wildlife corridors, and breathtaking Nilgiri valley views. Smooth highway stretches blended with thrilling hairpin bends made this cross-border ride a perfect mix of nature, elevation, and pure touring spirit.</p>
-			<a href="contact.html" class="event-register">Memory Saved</a>
-		  </div>
-		</div>
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Jul 20, 2020</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Suryanelli Ride 2020</h3>
-			  <div class="event-meta"><span>Trissur Start</span><span>2 Day · 460 km</span></div>
-			  <p class="event-desc">High-altitude riding at its finest. Suryanelli offers dramatic mountain landscapes, sharp bends, and breathtaking sunrise viewpoints deep in the Western Ghats.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>	
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">May 20, 2020</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">900 Kandi Ride 2020</h3>
-			  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 420 km</span></div>
-			  <p class="event-desc">A legendary ride to 900 Kandi featuring forest routes, bamboo bridges, and panoramic hilltop scenery. A remote destination that rewards every kilometre with pure adventure.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>	  
-
-		  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
-			<div class="event-img">
-			  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
-			  <span class="event-date-badge">Nov 20, 2019</span>
-			  <span class="event-category">Off-Road</span>
-			</div>
-			<div class="event-body">
-			  <h3 class="event-title">Chimmini 2019</h3>
-			  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 420 km</span></div>
-			  <p class="event-desc">A legendary ride to 900 Kandi featuring forest routes, bamboo bridges, and panoramic hilltop scenery. A remote destination that rewards every kilometre with pure adventure.</p>
-			  <a href="contact.html" class="event-register">Memory Saved</a>
-			</div>
-		  </div>
-
+		<div class="event-body">
+		  <h3 class="event-title">Anakulam 2025</h3>
+		  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 300 km</span></div>
+		  <p class="event-desc">Ride into the wild heart of Anakulam, known for its serene forest roads and elephant corridors. A balanced mix of smooth highways and nature-bound stretches under Kerala’s open skies.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
 		</div>
 	  </div>
-	</section>
-	<!-- FOOTER -->
-	<footer>
-	  <div class="footer-top"><div class="container"><div class="footer-grid">
-		<div class="footer-brand">
-		  <a href="index.html" class="nav-logo">
-			<img src="assets/images/logo.png" alt="JRCK Logo" class="logo-svg" style="object-fit:contain;">
-			<div><span class="nav-logo-text">JRCK</span><span class="nav-logo-sub">Est. 2019</span></div>
-		  </a>
-		  <p class="footer-desc">Jawa Riders Club Kerala — Premium motorcycle brotherhood. Est. 2019.</p>
-		  <div class="footer-social">
-			<a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn">📸</a>
-			<a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn">👥</a>
-			<a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn">▶</a>
-			<a href="https://wa.me" target="_blank" rel="noopener" class="social-btn">💬</a>
-		  </div>
+	  
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="night">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
+		  <span class="event-date-badge">Feb 26, 2025</span>
+		  <span class="event-category">Touring</span>
 		</div>
-		<div><h4 class="footer-heading">Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-		<div><h4 class="footer-heading">Ride Types</h4><ul class="footer-links"><li><a href="events.html">Touring</a></li><li><a href="events.html">Off-Road</a></li><li><a href="events.html">Night Rides</a></li><li><a href="events.html">Charity Rides</a></li></ul></div>
-		<div><h4 class="footer-heading">Contact</h4><div class="footer-contact-item"><span class="icon">📍</span><span>Kerala, India</span></div><div class="footer-contact-item"><span class="icon">✉️</span><span>jawaridersclubkerala@gmail.com</span></div><div class="footer-contact-item"><span class="icon">📱</span><span>+91 9656139659</span></div></div>
-	  </div></div></div>
-	  <div class="footer-bottom"><div class="container"><div class="footer-bottom-inner">
-		<p class="footer-copy">© 2026 <span>JRCK – Jawa Riders Club Kerala</span>. All Rights Reserved.</p>
-		<p class="footer-tagline">Built for Roads. Born for Adventure.</p>
-	  </div></div></div>
-	</footer>
-	<script src="assets/js/script.js"></script>
-	</body>
-	</html>
+		<div class="event-body">
+		  <h3 class="event-title">Kanthalloor 2025</h3>
+		  <div class="event-meta"><span>Thrissur Start</span><span>2 Days · 300 km</span></div>
+		  <p class="event-desc">Ride into the breathtaking heights of Kanthalloor, Munnar — where winding mountain roads, mist-covered valleys, and endless plantations define the journey. A perfect blend of smooth highway cruising and scenic hill climbs under Kerala’s cool highland skies.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>		  
+
+	  <div class="event-card filterable-card anim-fade anim-delay-1" data-category="touring">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Ooty Tour" loading="lazy">
+		  <span class="event-date-badge">Jun 8, 2024</span>
+		  <span class="event-category">Touring</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Kodai Mist 2024</h3>
+		  <div class="event-meta"><span>Palakkad Start</span><span>2 Days · 650 km</span></div>
+		  <p class="event-desc">An epic cross-border tour to Kodaikanal featuring sweeping mountain curves, misty pine forests, and breathtaking valley viewpoints. A premium long-distance ride built for true touring enthusiasts.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>
+
+	  <div class="event-card filterable-card anim-fade" data-category="charity">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&q=80" alt="Charity Ride" loading="lazy">
+		  <span class="event-date-badge">May 12, 2024</span>
+		  <span class="event-category">Charity</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Attapadi · Independence day Ride</h3>
+		  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 320 km</span></div>
+		  <p class="event-desc">A purposeful ride to Attapadi’s tribal heartland combining scenic countryside roads with JRCK’s spirit of service. Brotherhood, responsibility, and riding passion come together on this meaningful journey.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>
+	  
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">Aug 20, 2024</span>
+		  <span class="event-category">Touring</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Muthanga Ride 2024</h3>
+		  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
+		  <p class="event-desc">A challenging off-road expedition to Sirvali featuring rocky terrain, steep climbs, and deep forest sections. Designed for riders who seek raw trails and adrenaline-filled exploration.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>
+
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">Jun 20, 2024</span>
+		  <span class="event-category">Off-Road</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Siruvani Ride 2024</h3>
+		  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
+		  <p class="event-desc">A challenging off-road expedition to Sirvali featuring rocky terrain, steep climbs, and deep forest sections. Designed for riders who seek raw trails and adrenaline-filled exploration.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>
+	  
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">Jan 1, 2024</span>
+		  <span class="event-category">Charity</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Muthanga New Year Ride 2024</h3>
+		  <div class="event-meta"><span>Malappuram Start</span><span>2 Day · 420 km</span></div>
+		  <p class="event-desc">Kickstart the year with a powerful throttle twist and fresh horizons ahead. A celebratory ride filled with scenic highways, hilltop sunrises, and unstoppable brotherhood — welcoming the New Year the only way we know: engines roaring, spirits high, and miles to conquer together.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>		  
+	  
+	<div class="event-card filterable-card anim-fade anim-delay-2" data-category="touring">
+	  <div class="event-img">
+		<img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Varkala Cliff" loading="lazy">
+		<span class="event-date-badge">Sep 18, 2023</span>
+		<span class="event-category">Touring</span>
+	  </div>
+	  <div class="event-body">
+		<h3 class="event-title">Varkala Ride 2023</h3>
+		<div class="event-meta"><span>Palakkad Start</span><span>2 Day · 420 km</span></div>
+		<p class="event-desc">A scenic coastal tour to Varkala featuring smooth highways, sea-breeze stretches, and stunning cliffside views. A perfect blend of relaxed cruising, sunset moments, and JRCK brotherhood by the Arabian Sea.</p>
+		<a href="contact.html" class="event-register">Memory Saved</a>
+	  </div>
+	</div>
+	
+	<div class="event-card filterable-card anim-fade anim-delay-2" data-category="touring">
+	  <div class="event-img">
+		<img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Varkala Cliff" loading="lazy">
+		<span class="event-date-badge">Feb 18, 2022</span>
+		<span class="event-category">Off-Road</span>
+	  </div>
+	  <div class="event-body">
+		<h3 class="event-title">Masinagudi Ride 2022</h3>
+		<div class="event-meta"><span>Palakkad Start</span><span>2 Day · 480 km</span></div>
+		<p class="event-desc">A scenic forest tour to Masanagudi featuring winding ghat roads, wildlife corridors, and breathtaking Nilgiri valley views. Smooth highway stretches blended with thrilling hairpin bends made this cross-border ride a perfect mix of nature, elevation, and pure touring spirit.</p>
+		<a href="contact.html" class="event-register">Memory Saved</a>
+	  </div>
+	</div>
+
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">Jul 20, 2020</span>
+		  <span class="event-category">Off-Road</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Suryanelli Ride 2020</h3>
+		  <div class="event-meta"><span>Trissur Start</span><span>2 Day · 460 km</span></div>
+		  <p class="event-desc">High-altitude riding at its finest. Suryanelli offers dramatic mountain landscapes, sharp bends, and breathtaking sunrise viewpoints deep in the Western Ghats.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>	
+
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">May 20, 2020</span>
+		  <span class="event-category">Off-Road</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">900 Kandi Ride 2020</h3>
+		  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 420 km</span></div>
+		  <p class="event-desc">A legendary ride to 900 Kandi featuring forest routes, bamboo bridges, and panoramic hilltop scenery. A remote destination that rewards every kilometre with pure adventure.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>	  
+
+	  <div class="event-card filterable-card anim-fade anim-delay-2" data-category="offroad">
+		<div class="event-img">
+		  <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=600&q=80" alt="Agasthya Hills" loading="lazy">
+		  <span class="event-date-badge">Nov 20, 2019</span>
+		  <span class="event-category">Off-Road</span>
+		</div>
+		<div class="event-body">
+		  <h3 class="event-title">Chimmini 2019</h3>
+		  <div class="event-meta"><span>Kochi Start</span><span>2 Day · 420 km</span></div>
+		  <p class="event-desc">A legendary ride to 900 Kandi featuring forest routes, bamboo bridges, and panoramic hilltop scenery. A remote destination that rewards every kilometre with pure adventure.</p>
+		  <a href="contact.html" class="event-register">Memory Saved</a>
+		</div>
+	  </div>
+
+	</div>
+  </div>
+</section>
+
+<!-- RIDE CATEGORIES -->
+<section class="ride-category-section section-pad">
+  <div class="container">
+    <span class="label-tag anim-fade">Explore by Type</span>
+    <h2 class="section-title anim-fade anim-delay-1">Ride <span>Categories</span></h2>
+    <div class="ride-cat-grid">
+      <div class="ride-cat-item anim-fade">
+        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Touring" loading="lazy">
+        <div class="ride-cat-overlay">
+          <h3 class="ride-cat-name">Touring</h3>
+          <p class="ride-cat-count">40+ Rides Completed</p>
+        </div>
+      </div>
+      <div class="ride-cat-item anim-fade anim-delay-1">
+        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Off-Road" loading="lazy">
+        <div class="ride-cat-overlay">
+          <h3 class="ride-cat-name">Off-Road</h3>
+          <p class="ride-cat-count">35+ Rides Completed</p>
+        </div>
+      </div>
+      <div class="ride-cat-item anim-fade anim-delay-2">
+        <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Rides" loading="lazy">
+        <div class="ride-cat-overlay">
+          <h3 class="ride-cat-name">Night Rides</h3>
+          <p class="ride-cat-count">25+ Rides Completed</p>
+        </div>
+      </div>
+      <div class="ride-cat-item anim-fade anim-delay-3">
+        <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=600&q=80" alt="Charity" loading="lazy">
+        <div class="ride-cat-overlay">
+          <h3 class="ride-cat-name">Charity Rides</h3>
+          <p class="ride-cat-count">20+ Events Done</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/images/logo.png" alt="JRCK Logo" class="logo-svg" style="object-fit:contain;">
+            <div>
+              <span class="nav-logo-text">JRCK</span>
+              <span class="nav-logo-sub">Est. 2019</span>
+            </div>
+          </a>
+          <p class="footer-desc">Jawa Riders Club Kerala — A premium bike touring and off-road brotherhood community of Jawa and Yezdi owners across God's Own Country.</p>
+			<div class="footer-social">
+			  <a href="https://www.instagram.com/j_r_c_k_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+				<i class="fab fa-instagram"></i>
+			  </a>
+			  
+			  <a href="https://wa.me/919656139659" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+				<i class="fab fa-whatsapp"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+				<i class="fab fa-youtube"></i>
+			  </a>
+
+			</div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About JRCK</a></li>
+            <li><a href="events.html">Events & Rides</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Ride Categories</h4>
+          <ul class="footer-links">
+            <li><a href="events.html">Touring Rides</a></li>
+            <li><a href="events.html">Off-Road Adventures</a></li>
+            <li><a href="events.html">Night Rides</a></li>
+            <li><a href="events.html">Charity Rides</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html#membership">Join JRCK</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Kerala, India<br>Operating across all 14 districts</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>jawaridersclubkerala@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📱</span>
+            <span>+91 9656139659<br>WhatsApp preferred</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">© 2026 <span>JRCK – Jawa Riders Club Kerala</span>. All Rights Reserved. Est. 2019.</p>
+        <p class="footer-tagline">One Ride. One Brotherhood.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
