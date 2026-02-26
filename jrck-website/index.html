@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- Favicon fallback SVG -->
 <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
 </head>
@@ -76,14 +77,14 @@
 <section class="hero" id="heroSection">
   <!-- Trail canvas: above bg, below all overlays -->
   <canvas id="hero-trail-canvas"></canvas>
-  <div class="hero-bg" id="heroBg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80');"></div>
+  <div class="hero-bg" id="heroBg" style="background-image: url('assets/images/jrck_banner_3.png');"></div>
   <div class="hero-overlay"></div>
   <div class="hero-overlay-bottom"></div>
   <div class="hero-content">
     <p class="hero-estd">★ Est. 2019 · Jawa Riders Club Kerala ★</p>
     <h1 class="hero-title">
       Ride Together.
-      <span class="line2">Ride Free.</span>
+      <span class="line2">United by the Road.</span>
     </h1>
     <p class="hero-subtitle">Official Brotherhood of Jawa &amp; Yezdi Riders in Kerala</p>
     <div class="hero-btns">
@@ -104,10 +105,58 @@
   <div class="container">
     <div class="about-intro-grid">
       <div class="about-intro-img anim-left">
-        <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=800&q=80" alt="JRCK Brotherhood Ride" loading="lazy">
-        <div class="year-badge">
-          <span>Estd.</span>2019
+
+        <!-- ── Image wrapper with all overlays ── -->
+        <div class="aimg-frame">
+
+          <!-- Main photo -->
+          <img src="assets/images/main_logo1.jpg"
+               alt="JRCK Brotherhood Ride"
+               loading="lazy"
+               class="aimg-photo">
+
+          <!-- Dark gradient: bottom-heavy for text legibility -->
+          <div class="aimg-gradient"></div>
+
+          <!-- Tire-track SVG texture (very low opacity) -->
+          <div class="aimg-tracks"></div>
+
+          <!-- Speed-line accent strokes -->
+          <div class="aimg-speed-lines">
+            <span></span><span></span><span></span>
+            <span></span><span></span>
+          </div>
+
+          <!-- Animated light sweep -->
+          <div class="aimg-sweep"></div>
+
+          <!-- Glowing orange border frame -->
+          <div class="aimg-border"></div>
+
+          <!-- JRCK Logo badge — glassmorphism, top-left -->
+          <div class="aimg-logo-badge">
+            <img src="assets/images/jawalogo.png" alt="JRCK Logo" class="aimg-logo">
+          </div>
+
+          <!-- Bottom info bar -->
+          <div class="aimg-bottom-bar">
+            <div class="aimg-ride-tag">
+              <span class="aimg-dot"></span>
+              Jawa &amp; Yezdi · Kerala
+            </div>
+           
+          </div>
+
         </div>
+
+        <!-- Estd. badge — kept outside frame, original position -->
+        <div class="year-badge">
+          <span>ESTD.</span>2019
+        </div>
+
+        <!-- Offset accent border (original ::before replacement) -->
+        <div class="aimg-offset-border"></div>
+
       </div>
       <div class="anim-right">
         <span class="label-tag">About JRCK</span>
@@ -121,11 +170,11 @@
         </p>
         <div class="about-stats">
           <div class="stat-box anim-fade anim-delay-1">
-            <div class="stat-number">500+</div>
+            <div class="stat-number">120+</div>
             <div class="stat-label">Active Members</div>
           </div>
           <div class="stat-box anim-fade anim-delay-2">
-            <div class="stat-number">120+</div>
+            <div class="stat-number">50+</div>
             <div class="stat-label">Rides Completed</div>
           </div>
           <div class="stat-box anim-fade anim-delay-3">
@@ -151,7 +200,7 @@
         <span class="highlight-num">01</span>
         <span class="highlight-icon">🏔️</span>
         <h3 class="highlight-title">Touring</h3>
-        <p class="highlight-desc">Epic long-distance rides across Kerala's breathtaking landscapes — from coastal highways to mountain passes. Every tour is a new chapter in our brotherhood's story.</p>
+        <p class="highlight-desc">Epic long-distance rides across Kerala’s coastal highways and misty mountain passes. Every tour is a journey of endurance, exploration, and pure riding passion.</p>
       </div>
       <div class="highlight-card anim-fade anim-delay-1">
         <span class="highlight-num">02</span>
@@ -169,7 +218,7 @@
         <span class="highlight-num">04</span>
         <span class="highlight-icon">❤️</span>
         <h3 class="highlight-title">Community</h3>
-        <p class="highlight-desc">Charity rides, blood donation drives, and community service. JRCK gives back to Kerala because we are stronger together — on and off the road.</p>
+        <p class="highlight-desc">Community means standing together beyond the ride. JRCK provides strong service support and clear communication to resolve rider bike issues quickly and confidently.</p>
       </div>
     </div>
   </div>
@@ -187,56 +236,65 @@
     </div>
     <div class="events-grid">
 
-      <div class="event-card anim-fade">
-        <div class="event-img">
-          <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Wayanad Ride" loading="lazy">
-          <span class="event-date-badge">Mar 15, 2025</span>
-          <span class="event-category">Touring</span>
-        </div>
-        <div class="event-body">
-          <h3 class="event-title">Wayanad Mountain Run</h3>
-          <div class="event-meta">
-            <span>Kozhikode Start</span>
-            <span>2 Days</span>
-          </div>
-          <p class="event-desc">Conquer the misty curves of Wayanad's winding ghats. A 2-day tour through coffee estates, wildlife sanctuaries, and breathtaking viewpoints.</p>
-          <a href="events.html" class="event-register">Register Now</a>
-        </div>
-      </div>
+		<div class="event-card anim-fade">
+		  <div class="event-img">
+			<img src="assets/images/ooty-ride.jpg" alt="Nilgiris Ride" loading="lazy">
+			<span class="event-date-badge">May 8 , 2025</span>
+			<span class="event-category">Touring</span>
+		  </div>
 
-      <div class="event-card anim-fade anim-delay-1">
-        <div class="event-img">
-          <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Munnar Ride" loading="lazy">
-          <span class="event-date-badge">Apr 6, 2025</span>
-          <span class="event-category">Off-Road</span>
-        </div>
-        <div class="event-body">
-          <h3 class="event-title">Munnar Dirt Chronicles</h3>
-          <div class="event-meta">
-            <span>Ernakulam Start</span>
-            <span>1 Day</span>
-          </div>
-          <p class="event-desc">Off-road through Munnar's tea estates and mud trails. Only for the brave. Your Yezdi Adventure and Jawa were made for this terrain.</p>
-          <a href="events.html" class="event-register">Register Now</a>
-        </div>
-      </div>
+		  <div class="event-body">
+			<h3 class="event-title">Hidden Ghat Run – Nilgiris</h3>
+			<div class="event-meta">
+			  <span>Kochi Start</span>
+			  <span>3 Days</span>
+			</div>
+			<p class="event-desc">
+			  Ride into the hidden ghats of the Nilgiris. A 3-day mountain escape through sharp hairpins, cool forest stretches, and stunning high-altitude viewpoints.
+			</p>
+			<a href="events.html" class="event-register">Register Now</a>
+		  </div>
+		</div>
 
-      <div class="event-card anim-fade anim-delay-2">
-        <div class="event-img">
-          <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Midnight Ride" loading="lazy">
-          <span class="event-date-badge">Apr 26, 2025</span>
-          <span class="event-category">Night Ride</span>
-        </div>
-        <div class="event-body">
-          <h3 class="event-title">JRCK Midnight Phantom Run</h3>
-          <div class="event-meta">
-            <span>Thrissur Start</span>
-            <span>8 Hours</span>
-          </div>
-          <p class="event-desc">The roads belong to us after midnight. An exhilarating night ride through Kerala's empty highways under a canopy of stars.</p>
-          <a href="events.html" class="event-register">Register Now</a>
-        </div>
-      </div>
+		<div class="event-card anim-fade">
+		  <div class="event-img">
+			<img src="assets/images/varkala1.jpg" alt="Varkala Coastal Ride" loading="lazy">
+			<span class="event-date-badge">Aug 18, 2025</span>
+			<span class="event-category">Touring</span>
+		  </div>
+
+		  <div class="event-body">
+			<h3 class="event-title">Cliffline Coastal Escape – Varkala</h3>
+			<div class="event-meta">
+			  <span>Calicut Start</span>
+			  <span>3 Days</span>
+			</div>
+			<p class="event-desc">
+			  A 3-day coastal ride to Varkala’s iconic cliffs. Cruise scenic highways, oceanfront stretches, and sunset viewpoints along Kerala’s Arabian Sea coast.
+			</p>
+			<a href="events.html" class="event-register">Register Now</a>
+		  </div>
+		</div>
+
+		<div class="event-card anim-fade">
+		  <div class="event-img">
+			<img src="assets/images/sathyamangalam.jpg" alt="Sathyamangalam Forest Ride" loading="lazy">
+			<span class="event-date-badge">Nov 22, 2025</span>
+			<span class="event-category">Adventure</span>
+		  </div>
+
+		  <div class="event-body">
+			<h3 class="event-title">Wild Expedition – Sathyamangalam</h3>
+			<div class="event-meta">
+			  <span>Malappuram Start</span>
+			  <span>2 Days</span>
+			</div>
+			<p class="event-desc">
+			  Ride through the legendary forest corridors of Sathyamangalam. Experience thrilling bends, dense greenery, and raw wilderness on this adventure-packed run.
+			</p>
+			<a href="events.html" class="event-register">Register Now</a>
+		  </div>
+		</div>
 
     </div>
   </div>
@@ -244,7 +302,7 @@
 
 <!-- ============================================================ PARALLAX QUOTE ============================================================ -->
 <div class="parallax-banner">
-  <div class="parallax-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=70');"></div>
+  <div class="parallax-banner-bg" style="background-image: url('assets/images/varkala.jpg');"></div>
   <div class="parallax-banner-overlay"></div>
   <div class="parallax-banner-content">
     <p class="parallax-quote">
@@ -260,24 +318,24 @@
     <h2 class="section-title">Ride <span>Memories</span></h2>
     <div class="gallery-grid">
       <div class="gallery-item anim-fade">
-        <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=900&q=80" alt="Group Ride Kerala" loading="lazy">
-        <div class="gallery-overlay"><span>Brotherhood Ride · Thrissur</span></div>
+        <img src="assets/images/group-5.jpeg" alt="Group Ride Kerala" loading="lazy">
+        <div class="gallery-overlay"><span>Panjalimedu · Idukki </span></div>
       </div>
       <div class="gallery-item anim-fade anim-delay-1">
-        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=600&q=80" alt="Mountain Ride" loading="lazy">
-        <div class="gallery-overlay"><span>Wayanad · Morning Mist</span></div>
+        <img src="assets/images/group-2.jpeg" alt="Mountain Ride" loading="lazy">
+        <div class="gallery-overlay"><span>Jawa day Meetup · Palakkad</span></div>
       </div>
       <div class="gallery-item anim-fade anim-delay-2">
-        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=600&q=80" alt="Off Road" loading="lazy">
-        <div class="gallery-overlay"><span>Munnar Off-Road</span></div>
+        <img src="assets/images/group-1.jpeg" alt="Off Road" loading="lazy">
+        <div class="gallery-overlay"><span>Illikkal backside · Kottayam</span></div>
       </div>
       <div class="gallery-item anim-fade anim-delay-1">
-        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Sunset Ride" loading="lazy">
-        <div class="gallery-overlay"><span>Sunset Coastal Run</span></div>
+        <img src="assets/images/group-4.jpeg" alt="Sunset Ride" loading="lazy">
+        <div class="gallery-overlay"><span>Ammachi Kottaram · Kuttikkanam</span></div>
       </div>
       <div class="gallery-item anim-fade anim-delay-2">
-        <img src="https://images.unsplash.com/photo-1622165033987-5607a316cdae?w=600&q=80" alt="Night Ride" loading="lazy">
-        <div class="gallery-overlay"><span>Midnight Phantom Run</span></div>
+        <img src="assets/images/group-6.jpeg" alt="Night Ride" loading="lazy">
+        <div class="gallery-overlay"><span>Two wheels, one road, endless· Chikmagalur vibes</span></div>
       </div>
     </div>
   </div>
@@ -293,65 +351,65 @@
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">Joining JRCK was the best decision of my riding life. The camaraderie, the rides, the brotherhood — nothing compares. These aren't just riders; they're family who show up for you on every road.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">A</div>
-            <div>
-              <p class="testimonial-name">Arjun Menon</p>
-              <p class="testimonial-role">Member since 2019</p>
-              <p class="testimonial-bike">Jawa 42 · Kozhikode</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">JRCK taught me that riding is not a solo sport. The Wayanad ride was my first ever group tour and I cannot describe the feeling of 50 Jawa engines roaring together through the ghats at dawn.</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">R</div>
-            <div>
-              <p class="testimonial-name">Rahul Krishnan</p>
-              <p class="testimonial-role">Member since 2020</p>
-              <p class="testimonial-bike">Yezdi Adventure · Ernakulam</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">The off-road sessions organized by JRCK completely transformed my riding skills. The senior riders in this club share knowledge freely, and the safety protocols are top class.</p>
+          <p class="testimonial-text">Joining JRCK changed my riding journey completely. Every ride pushes limits, builds skill, and creates memories that stay long after the engines cool down.</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar">S</div>
             <div>
-              <p class="testimonial-name">Sujith Nair</p>
-              <p class="testimonial-role">Member since 2021</p>
-              <p class="testimonial-bike">Jawa Perak · Thrissur</p>
+              <p class="testimonial-name">Sayooj Samuel</p>
+              <p class="testimonial-role">Member since 2023</p>
+              <p class="testimonial-bike">Yezdi Adventure · Palakkad</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">As a woman rider in Kerala, finding a community this welcoming and supportive was a game changer. JRCK doesn't just accept riders — they elevate everyone who joins the brotherhood.</p>
+          <p class="testimonial-text">With JRCK, every throttle twist feels purposeful. The discipline, the planning, and the passion on every ride make each journey truly unforgettable.</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">P</div>
+            <div class="testimonial-avatar">M</div>
             <div>
-              <p class="testimonial-name">Priya Varma</p>
-              <p class="testimonial-role">Member since 2022</p>
-              <p class="testimonial-bike">Yezdi Roadster · Kochi</p>
+              <p class="testimonial-name">Manu M</p>
+              <p class="testimonial-role">Member since 2023</p>
+              <p class="testimonial-bike">Jawa 42 2.1 · Palakkad</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">I have done over 25 rides with JRCK and each one feels like the first. The organization is impeccable, the people are genuine, and the roads of Kerala are spectacular when experienced together.</p>
+          <p class="testimonial-text">Riding with JRCK is pure adrenaline and connection. From sunrise starts to night returns, every mile feels meaningful and powerfully alive.</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">V</div>
+            <div class="testimonial-avatar">S</div>
             <div>
-              <p class="testimonial-name">Vipin Thomas</p>
+              <p class="testimonial-name">Saji TK</p>
+              <p class="testimonial-role">Member since 2023</p>
+              <p class="testimonial-bike">Jawa 42 · Palakkad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">As a woman rider in Kerala, finding JRCK was empowering. The club truly values lady riders, ensures strong safety measures, and creates a secure, respectful space to ride with confidence.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <p class="testimonial-name">Ayana VR</p>
               <p class="testimonial-role">Member since 2019</p>
-              <p class="testimonial-bike">Jawa 42 · Kottayam</p>
+              <p class="testimonial-bike">Jawa 42 · Kochi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Riding with JRCK redefined my journey on two wheels. Every tour is perfectly planned, every mile feels purposeful, and every return leaves me stronger, sharper, and ready for the next adventure. 🏍️</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <p class="testimonial-name">Nitheesh</p>
+              <p class="testimonial-role">Member since 2025</p>
+              <p class="testimonial-bike">Jawa Classic · Kottayam</p>
             </div>
           </div>
         </div>
@@ -359,25 +417,20 @@
       </div>
     </div>
     <div class="slider-controls">
-      <button class="slider-btn slider-prev">←</button>
-      <button class="slider-btn slider-next">→</button>
-      <div class="slider-dots">
-        <span class="slider-dot active"></span>
-        <span class="slider-dot"></span>
-        <span class="slider-dot"></span>
-      </div>
+      <button class="slider-btn slider-prev" aria-label="Previous">←</button>
+      <button class="slider-btn slider-next" aria-label="Next">→</button>
+      <!-- Dots generated dynamically by JS based on card count -->
+      <div class="slider-dots"></div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================ CTA BANNER ============================================================ -->
 <section class="cta-banner">
-  <div class="cta-banner-bg" style="background-image: url('https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=1920&q=70');"></div>
+  <div class="cta-banner-bg" style="background-image: url('assets/images/group-3.jpeg');"></div>
   <div class="cta-banner-overlay"></div>
-  <!-- Watermark logo -->
-  <svg class="watermark-logo" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 10 Q8 4 14 4 L66 4 Q72 4 72 10 L72 60 L40 86 L8 60 Z" fill="#F67E2A"/>
-  </svg>
+  <!-- Real JRCK logo watermark -->
+  <img src="assets/images/logo.png" alt="" class="watermark-logo" aria-hidden="true" style="pointer-events:none;">
   <div class="cta-content">
     <p class="cta-tagline">★ Join the Legend ★</p>
     <h2 class="cta-title">JRCK — Where <span>Legends</span> Ride</h2>
@@ -403,12 +456,24 @@
             </div>
           </a>
           <p class="footer-desc">Jawa Riders Club Kerala — A premium bike touring and off-road brotherhood community of Jawa and Yezdi owners across God's Own Country.</p>
-          <div class="footer-social">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📸</a>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">👥</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">▶</a>
-            <a href="https://wa.me" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">💬</a>
-          </div>
+			<div class="footer-social">
+			  <a href="https://www.instagram.com/j_r_c_k_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+				<i class="fab fa-instagram"></i>
+			  </a>
+			  
+			  <a href="https://wa.me/919656139659" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+				<i class="fab fa-whatsapp"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			  </a>
+
+			  <a href="#" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+				<i class="fab fa-youtube"></i>
+			  </a>
+
+			</div>
         </div>
 
         <div>
