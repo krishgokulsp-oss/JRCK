@@ -279,60 +279,130 @@
   });
 
   /* ============================================================
-     7. TESTIMONIALS SLIDER
+     7. TESTIMONIALS SLIDER — fully rewritten
+        - JS controls card widths (no CSS percentage bugs)
+        - Dynamic dot count matches actual slide positions
+        - Wrapper-based width measurement (always accurate)
+        - Gap handled inside card width calculation
   ============================================================ */
   const track = $('.testimonials-track');
   if (track) {
+    const wrapper  = track.parentElement;       // .testimonials-wrapper
     const cards    = $$('.testimonial-card', track);
-    const dots     = $$('.slider-dot');
+    const dotsWrap = $('.slider-dots');
     const prevBtn  = $('.slider-prev');
     const nextBtn  = $('.slider-next');
+    const GAP      = 20; // px gap between cards
     let current    = 0;
+    let autoplayId = null;
 
+    /* How many cards visible at current viewport */
     function getVisible() {
-      return window.innerWidth < 768 ? 1 : window.innerWidth < 1100 ? 2 : 3;
+      return window.innerWidth < 600 ? 1 : window.innerWidth < 1024 ? 2 : 3;
     }
 
-    function updateSlider() {
-      const cardEl = cards[0];
-      if (!cardEl) return;
-      const gapPx = 24;
-      const cardWidth = cardEl.getBoundingClientRect().width + gapPx;
-      track.style.transform = `translateX(-${current * cardWidth}px)`;
-      dots.forEach((d, i) => d.classList.toggle('active', i === current));
-    }
-
+    /* Max slide position */
     function maxIndex() {
       return Math.max(0, cards.length - getVisible());
     }
 
+    /* Set every card to exact pixel width based on wrapper */
+    function sizeCards() {
+      const vis        = getVisible();
+      const wrapW      = wrapper.getBoundingClientRect().width;
+      const totalGap   = GAP * (vis - 1);           // gaps between visible cards
+      const cardW      = (wrapW - totalGap) / vis;  // each card's exact width
+
+      cards.forEach(c => {
+        c.style.width    = cardW + 'px';
+        c.style.minWidth = cardW + 'px';
+        c.style.marginRight = GAP + 'px';
+      });
+      // Remove gap after last card
+      if (cards.length) {
+        cards[cards.length - 1].style.marginRight = '0px';
+      }
+    }
+
+    /* Rebuild dots to match actual number of positions */
+    function buildDots() {
+      if (!dotsWrap) return;
+      const count = maxIndex() + 1;
+      dotsWrap.innerHTML = '';
+      for (let i = 0; i < count; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'slider-dot' + (i === current ? ' active' : '');
+        dot.addEventListener('click', () => { current = i; render(); });
+        dotsWrap.appendChild(dot);
+      }
+    }
+
+    /* Move track + sync dots */
+    function render() {
+      const cardW   = cards[0] ? (parseFloat(cards[0].style.width) || 0) : 0;
+      const offset  = current * (cardW + GAP);
+      track.style.transform = `translateX(-${offset}px)`;
+
+      /* Sync dots */
+      $$('.slider-dot', dotsWrap).forEach((d, i) =>
+        d.classList.toggle('active', i === current)
+      );
+    }
+
+    /* Full reinit on resize */
+    function init() {
+      /* Clamp current to valid range after resize */
+      current = Math.min(current, maxIndex());
+      sizeCards();
+      buildDots();
+      render();
+    }
+
+    /* Controls */
     if (prevBtn) prevBtn.addEventListener('click', () => {
-      current = Math.max(0, current - 1); updateSlider();
+      current = Math.max(0, current - 1); render();
     });
     if (nextBtn) nextBtn.addEventListener('click', () => {
-      current = Math.min(maxIndex(), current + 1); updateSlider();
+      current = Math.min(maxIndex(), current + 1); render();
     });
-    dots.forEach((dot, i) => dot.addEventListener('click', () => {
-      current = i; updateSlider();
-    }));
 
-    /* Auto-play */
-    let autoplay = setInterval(() => {
-      current = current >= maxIndex() ? 0 : current + 1;
-      updateSlider();
-    }, 5000);
-    track.addEventListener('mouseenter', () => clearInterval(autoplay));
-    track.addEventListener('mouseleave', () => {
-      autoplay = setInterval(() => {
+    /* Autoplay */
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayId = setInterval(() => {
         current = current >= maxIndex() ? 0 : current + 1;
-        updateSlider();
+        render();
       }, 5000);
-    });
+    }
+    function stopAutoplay() {
+      if (autoplayId) { clearInterval(autoplayId); autoplayId = null; }
+    }
 
-    window.addEventListener('resize', rafThrottle(() => {
-      current = 0;
-      updateSlider();
-    }));
+    wrapper.addEventListener('mouseenter', stopAutoplay);
+    wrapper.addEventListener('mouseleave', startAutoplay);
+
+    /* Touch/swipe support */
+    let touchStartX = 0;
+    wrapper.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+      stopAutoplay();
+    }, { passive: true });
+    wrapper.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        current = dx < 0
+          ? Math.min(maxIndex(), current + 1)
+          : Math.max(0, current - 1);
+        render();
+      }
+      startAutoplay();
+    }, { passive: true });
+
+    /* Resize */
+    window.addEventListener('resize', rafThrottle(init));
+
+    /* Boot — wait one frame so wrapper has correct width */
+    requestAnimationFrame(() => { init(); startAutoplay(); });
   }
 
   /* ============================================================
